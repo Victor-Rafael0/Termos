@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Condições de Serviço</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Termos e Condições de Serviço</h1>
+        <p>Por favor, leia atentamente nossos termos e condições antes de prosseguir com a contratação de nossos serviços ou compra de produtos. Ao aceitar, você firma um contrato legal conosco.</p>
+
+        <div class="terms-box">
+            <h2>1. Objeto e Aceitação</h2>
+            <p>1.1. O presente termo regula a venda e o licenciamento de uso de produtos e serviços digitais, incluindo, mas não se limitando a, bots de Discord, scripts, e websites (doravante "Produtos"), desenvolvidos por Victor Rafael Freitas (doravante "VENDEDOR").</p>
+            <p>1.2. A aceitação destes termos é requisito indispensável para a aquisição e utilização dos Produtos. A marcação da caixa "Li e concordo" e a finalização da compra constituem sua aceitação plena e irrevogável de todos os termos e condições.</p>
+
+            <h2>2. Pagamento e Entrega</h2>
+            <p>2.1. O pagamento será processado por plataformas de terceiros (ex: Mercado Pago, Stripe) e deverá ser efetuado integralmente antes da entrega. O VENDEDOR não armazena dados de cartão de crédito.</p>
+            <p>2.2. A entrega dos Produtos digitais será realizada por meio eletrônico (e-mail, link para download ou acesso a uma plataforma) em até 48 horas úteis após a confirmação do pagamento, salvo acordo diferente entre as partes.</p>
+
+            <h2>3. Licença de Uso</h2>
+            <p>3.1. Ao adquirir um Produto, você recebe uma licença de uso vitalícia, pessoal, intransferível e não exclusiva para utilizar o Produto para os fins a que se destina.</p>
+            <p>3.2. Esta licença não concede a propriedade sobre o Produto. É expressamente proibido modificar, copiar, redistribuir, vender, alugar, ou realizar engenharia reversa do código-fonte do Produto.</p>
+
+            <h2>4. Política de Reembolso</h2>
+            <p>4.1. **NATUREZA DOS PRODUTOS DIGITAIS:** Dada a natureza intangível dos Produtos, que não podem ser "devolvidos", o direito de arrependimento (previsto no Art. 49 do Código de Defesa do Consumidor) não se aplica após o envio ou liberação do acesso ao Produto. A compra é final.</p>
+            <p>4.2. Um reembolso só será considerado em caso de falha comprovada e irremediável do VENDEDOR em entregar o Produto funcional conforme descrito, e após esgotadas todas as tentativas de correção.</p>
+
+            <h2>5. Suporte Técnico</h2>
+            <p>5.1. O suporte padrão, válido por 30 dias após a compra, cobre exclusivamente a correção de bugs e falhas no funcionamento original do Produto. O prazo para análise é de até 72 horas úteis.</p>
+            <p>5.2. Não está incluso no suporte: customizações, implementação de novas funcionalidades, instalação em ambientes não recomendados, ou solução de problemas causados por mau uso ou conflito com softwares de terceiros.</p>
+
+            <h2>6. Responsabilidades do Cliente</h2>
+            <p>6.1. É de sua total responsabilidade fornecer as informações corretas para a entrega (ex: e-mail) e garantir que possui os requisitos técnicos mínimos para a utilização do Produto.</p>
+            <p>6.2. Você concorda em não utilizar os Produtos para quaisquer fins ilegais, fraudulentos ou que violem os termos de serviço de outras plataformas (como o Discord).</p>
+        </div>
+
+        <form id="terms-form" action="https://formspree.io/f/myzjnzyn" method="POST">
+            <label for="nome">Seu Nome Completo:</label>
+            <input type="text" id="nome" name="Nome do Cliente" placeholder="Digite seu nome aqui" required>
+
+            <label for="email_cliente">Seu E-mail de Contato:</label>
+            <input type="email" id="email_cliente" name="E-mail do Cliente" placeholder="exemplo@email.com" required>
+
+            <input type="hidden" name="Data do Aceite" id="data_aceite">
+
+            <div class="checkbox-label">
+                <input type="checkbox" id="aceite" name="Concordancia" value="Concordo" required>
+                <label for="aceite">Declaro que li, compreendi e concordo integralmente com os Termos e Condições de Serviço.</label>
+            </div>
+            
+            <button type="submit" id="submit-btn" disabled>Aceitar e Contratar</button>
+        </form>
+
+        <div id="form-status"></div>
+
+        <div class="footer">
+            <p>Última atualização: 22 de Junho de 2025</p>
+        </div>
+    </div>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>
